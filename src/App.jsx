@@ -41,7 +41,7 @@ function App() {
           </Routes>
         </main>
         
-      //footersection
+          {/* footer section */}
         <footer className="bg-slate-100 dark:bg-card-bg py-6 text-center text-sm opacity-80 mt-auto border-t border-slate-200 dark:border-slate-800">
           <p>© {new Date().getFullYear()} Puzzle Solver Studio - Computational Foundations of AI</p>
         </footer>
