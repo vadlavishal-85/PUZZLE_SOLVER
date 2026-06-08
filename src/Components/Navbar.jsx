@@ -43,7 +43,7 @@ function Navbar({ darkMode, toggleTheme }) {
                 {link.name}
               </Link>
             ))}
-            
+            {/* Theme toggle button for dark/light mode */}
             <button
               onClick={toggleTheme}
               className="ml-4 p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors"
