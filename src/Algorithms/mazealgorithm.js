@@ -114,6 +114,11 @@ export const solveMaze = (grid, start, goal, algorithm) => {
         } else if (algorithm === 'greedy') {
           // Greedy best-first: priority by heuristic distance to goal
           pq.enqueue(nextState, manhattan(nr, nc, goalR, goalC));
+        } else if (algorithm === 'astar') {
+          // A*: priority by cost + heuristic (f = g + h)
+          const heuristic = manhattan(nr, nc, goalR, goalC);
+          const fScore = newCost + heuristic;
+          pq.enqueue(nextState, fScore);
         }
       }
     }
